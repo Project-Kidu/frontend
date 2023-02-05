@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image'
 
 const CONFIG = {
-  "backend_url": "https://cqudtco0qd.execute-api.ap-south-1.amazonaws.com"
+  "backend_url": "https://n6he9cty8h.execute-api.ap-south-1.amazonaws.com"
 }
 
 export default function Home() {
@@ -56,13 +56,13 @@ export default function Home() {
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
-          CIFAR10 Inference on {' '}
+          Intel Scene Classification on {' '}
           <a className="text-blue-600" href="https://nextjs.org">
             Serverless
           </a>
         </h1>
         <div className="mt-10 text-lg">
-          To test, select a PNG Image from <a href="https://github.com/gokul-pv/lightning-hydra-timm/tree/main/tests/resources/cifar10" target="_blank" className='text-blue-600'>here</a>
+          To test, select a PNG Image from <a href="https://github.com/Project-Kidu/code-repo/tree/main/tests/resources/intel-scene" target="_blank" className='text-blue-600'>here</a>
         </div>
         <div className='mt-10 flex flex-row space-x-5 text-xl'>
           <div>
@@ -101,7 +101,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          AWS Lambda and NEXT.JS 🤖 Gokul P V
+          Made with 💖 and ☕ | Gokul
         </a>
       </footer>
     </div>

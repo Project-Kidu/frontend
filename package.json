@@ -1,13 +1,4 @@
 {
-  "name": "serverless-mnist",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
   "dependencies": {
     "@types/node": "18.11.9",
     "@types/react": "18.0.24",
@@ -21,5 +12,14 @@
     "react-dom": "18.2.0",
     "tailwindcss": "^3.2.1",
     "typescript": "4.8.4"
-  }
+  },
+  "name": "serverless-scene",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }
