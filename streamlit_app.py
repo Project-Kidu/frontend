@@ -35,7 +35,7 @@ if __name__ == '__main__':
         st.image(resized_image)
         st.title("Here are the Predictions")
 
-        url = "https://n6he9cty8h.execute-api.ap-south-1.amazonaws.com"
+        url = "https://5hbrm6xu63.execute-api.ap-south-1.amazonaws.com"
         ext = file.name.split('.')[-1]
         prefix = f'data:image/{ext};base64,'
 
