@@ -5,7 +5,7 @@
 </div>
 
 
-This repo contains the code for frontend of Intel Scene classification on AWS Lambda ([link](https://project-kidu-frontend-streamlit-app-mipzrg.streamlit.app/)). 
+This repo contains the code for frontend of Intel Scene classification on AWS Lambda ([link](https://project-kidu-frontend-streamlit-app-nkyspo.streamlit.app/)). 
 
 
 ### How to run
