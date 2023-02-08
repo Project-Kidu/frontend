@@ -11,29 +11,33 @@ layout = "centered"
 st.set_page_config(page_title=page_title, page_icon=page_icon, layout=layout)
 
 # --- HIDE STREAMLIT STYLE ---
-hide_st_style = """
-            <style>      
+streamlit_style = """
+			<style>
             footer {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+			html, body, [class*="css"]  {
+			font-family: 'Roboto', sans-serif;
+			}
+			</style>
+			"""
+st.markdown(streamlit_style, unsafe_allow_html=True)
 
 if __name__ == '__main__':
 
-    st.title('Intel Scene Classification on Serverless!')
-    instructions = """ To test, select a Image from [here](https://github.com/Project-Kidu/code-repo/tree/main/tests/resources/intel-scene) """
+    st.title('Intel Scene Classification on :blue[Serverless]')
+    instructions = """ To test, select an image from [here](https://github.com/Project-Kidu/code-repo/tree/main/tests/resources/intel-scene) """
     st.write(instructions)
+    st.sidebar.markdown("Made with ☕ and ❤️ by [Gokul](https://github.com/gokul-pv)", unsafe_allow_html=True)
 
-    file = st.file_uploader('Upload An Image', type= ['png', 'jpg', 'jpeg'])
+    file = st.file_uploader('Upload an Image', type= ['png', 'jpg', 'jpeg'])
 
 
     if file:  # if user uploaded file
         img = Image.open(file)
-        st.title("Here is the image you've selected")
+        st.subheader("Here is the image you've selected 🖼️")
         resized_image = img.resize((224, 224))
         st.image(resized_image)
-        st.title("Here are the Predictions")
+        st.subheader("Here are the predictions 🧠")
 
         url = "https://5hbrm6xu63.execute-api.ap-south-1.amazonaws.com"
         ext = file.name.split('.')[-1]
